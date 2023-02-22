@@ -18,7 +18,7 @@ public class ApiExplorer {
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B09004" +
                 "1/openapi/service/SpcdeInfoService/getRestDeInfo"); /*URL*/
         urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") +
-                "=serviceKey"); /*Service Key*/
+                "="); /*Service Key*/
         urlBuilder.append("&" + URLEncoder.encode("solYear", "UTF-8") + "=" + URLEncoder.encode(year, "UTF-8")); /*연*/
         urlBuilder.append("&" + URLEncoder.encode("solMonth", "UTF-8") + "=" + URLEncoder.encode(month, "UTF-8")); /*월*/
         URL url = new URL(urlBuilder.toString());
